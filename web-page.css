@@ -1,0 +1,175 @@
+/* ------ header設定 ------------- */
+body {
+    background: black;
+    background-size: cover;
+    background-position: center;
+    /* 參考網址 https://liuzehe.top/archives/2021081401 */
+    /* 鼠標網址 https://www.cursors-4u.com/cursor/2012/01/01/luffy-one-piece.html */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1162.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1162.gif), default;
+}
+
+a {
+    /* 鼠標網址 https://www.cursors-4u.com/cursor/2012/01/01/zora-one-piece.html#google_vignette */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1159.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1159.gif), pointer;
+}
+
+p {
+    /* 鼠標網址 https://www.cursors-4u.com/cursor/2012/01/01/going-merry-help-select.html */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-3/ani340.ani), url(https://cur.cursors-4u.net/anime/ani-3/ani340.png), auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    /* 將 header 内容設置為 Flex 布局 */
+    display: flex;
+    /* 水平内容分布在 header 的兩端 */
+    justify-content: space-between;
+    /* 垂直居中内容 */
+    align-items: center;
+    background-color: #3D1101;
+    background-size: 100% 110%;
+    z-index: 10;
+    /* 設置下邊距為 30像素 */
+    margin-bottom: 30px;
+    /* 修飾邊框為10px圓角邊框 */
+    border-radius: 10px;
+    /* 陰影效果 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header ul {
+    /* 設定左右內邊距為 20像素，上下內邊距為 0（視需要調整） */
+    padding: 0 20px;
+    /* 移除列表项的默认样式 */
+    list-style: none;
+    /* 将 ul 内容设置为 Flex 布局 */
+    display: flex;
+    font-size: 30px;
+}
+
+li.menu-music+li.menu-music {
+    /* 設定左右內邊距為 10像素，上下內邊距為 0（視需要調整） */
+    padding: 0 90px;
+}
+
+li.menu-register+li.menu-register {
+    /* 設定上邊距為 10像素，依需求調整 */
+    margin-top: 20px;
+    /* 設定左右內邊距為 10像素，上下內邊距為 0（視需要調整） */
+    padding: 0 10px;
+}
+
+.header a {
+    color: white;
+    /* 刪除下引線 */
+    text-decoration: none;
+}
+
+.title {
+    /* 設定為粗體字 */
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* ------ search設定 ------------- */
+
+.page-content {
+    max-width: 960px;
+    margin: 20px auto 0 auto;
+    height: auto;
+}
+
+.search-box {
+    /* 相對定位 */
+    position: relative;
+    width: 100%;
+    /* 設置下邊距為 30像素 */
+    margin-bottom: 30px;
+}
+
+.search-btn {
+    width: 5%;
+    height: 100%;
+    background-color: #3D1101;
+    color: #efe9e7;
+    /* 設置邊框大小及顏色 */
+    border: 2px solid #3D1101;
+    /* 設置鼠標懸停時樣式 鼠標網址 https://www.cursors-4u.com/cursor/2008/12/16/one-piece-tony-tony-chopper-3.html */
+    cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1150.ani), url(https://cur.cursors-4u.net/anime/ani-12/ani1150.gif), pointer;
+    /* 相對定位 */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#input {
+    width: 95%;
+    height: 32px;
+    font-size: 20px;
+    border: 3px solid #3D1101;
+    background-color: #efe9e7;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* ------ 搜尋欄設定 ------------- */
+
+.leftbar {
+    width: 20%;
+    height: 600px;
+    text-align: left;
+    background-color: #efe9e7;
+    float: left;
+    /* 修飾邊框為10px圓角邊框 */
+    border-radius: 10px;
+    /* 設置下邊距為 20像素 */
+    margin-bottom: 20px;
+    /* 陰影效果 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contentbar {
+    width: 60%;
+    height: 600px;
+    text-align: left;
+    background-color: #bb5532;
+    float: left;
+    /* 修飾邊框為10px圓角邊框 */
+    border-radius: 10px;
+    /* 設置下邊距為 20像素 */
+    margin-bottom: 20px;
+    /* 陰影效果 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rightbar {
+    width: 20%;
+    height: 600px;
+    text-align: center;
+    background-color: #633c2f;
+    float: left;
+    /* 修飾邊框為10px圓角邊框 */
+    border-radius: 10px;
+    /* 設置下邊距為 20像素 */
+    margin-bottom: 20px;
+    /* 陰影效果 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footerbar {
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    background-color: #8a7770;
+    /* 修飾邊框為10px圓角邊框 */
+    border-radius: 10px;
+    /* 陰影效果 */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}

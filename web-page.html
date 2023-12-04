@@ -1,0 +1,154 @@
+<!--設定HTML格視為HTML5做撰寫-->
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <!--網頁格式為UTF-8-->
+    <meta charset="UTF-8">
+    <!-- 為了讓舊版IE可使用 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 因應不同裝置解析度優化顯示畫面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link href="web-page.css" rel="stylesheet">
+    <!--搜尋放大鏡CSS https://fontawesome.com/v4/get-started/ -->
+    <!--搜尋放大鏡JavaScript https://fontawesome.com/kits/cd50c95c4e/setup -->
+    <script src="https://kit.fontawesome.com/cd50c95c4e.js" crossorigin="anonymous"></script>
+    <!--動態櫻花JavaScript-->
+    <script src="web-page-sakura.js"></script>
+    <!--滑鼠移動特效JavaScript-->
+    <script src="web-page-mouse-move.js"></script>
+    <!--鼠標點擊爆炸五顏六色特效JavaScript-->
+    <!--參考資料 https://www.cnblogs.com/songhaixing/p/13754821.html -->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;">
+    </canvas>
+    <script type="text/javascript" src="web-page-mouse-click.js"></script>
+    <!--end-->
+
+    <title>音樂網站</title>
+</head>
+
+<!--------------------------------------------header內容-------------------------------------------------------->
+
+<body>
+    <header>
+        <div class="header">
+            <div id="top-bar show-for-medium" class="top-bar">
+                <ul class="menu">
+                    <li>
+                        <a class="title" href="file:///C:/xampp/htdocs/web_page/web-page.html" title="音樂小屋">
+                            音樂小屋
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="top-bar-left main-menu" class="top-bar">
+                <ul class="menu">
+                    <li class="menu-music">
+                        <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="熱門歌手">
+                            熱門歌手
+                        </a>
+                    </li>
+                    <li class="menu-music">
+                        <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="熱門歌曲">
+                            熱門歌曲
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="top-bar-right" class="top-bar">
+                <ul class="menu">
+                    <li class="menu-register">
+                        <a href="http://localhost/project/(Nick)login_sample/login-register%20html%202023-10-12/register.html"
+                            title="註冊">
+                            註冊
+                        </a>
+                    </li>
+                    <li class="menu-register">
+                        <a href="http://localhost/project/(Nick)login_sample/login-register%20html%202023-10-12/login.html?"
+                            title="登入">
+                            登入
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!------------------------- 搜尋欄 ---------------------------->
+
+    <div class="page-content">
+        <div class="search-box">
+            <button class="search-btn" type="button">
+                <i class="fa fa-search fa-1g"></i>
+            </button>
+            <input id="input" type="text" placeholder="搜尋歌曲名稱">
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!---------------------------- 內文 --------------------------->
+
+    <div class="wrap">
+        <div class="leftbar">
+            <p>test1</p>
+            <ul>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test1">
+                        test1
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test2">
+                        test2
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contentbar">
+            <ul>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test1">
+                        test1
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test2">
+                        test2
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rightbar">
+            <ul>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test1">
+                        test1
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.ambassador.com.tw/home/MovieList?Type=1" title="test2">
+                        test2
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!---------------------------- 聯絡資訊 --------------------------->
+
+        <div class="footerbar">
+            聯絡資訊
+        </div>
+
+    </div>
+
+</body>
+
+</html>
